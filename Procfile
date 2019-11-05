@@ -1,1 +1,1 @@
-$ web gunicorn mylocalsf:app
+$web gunicorn mylocalsf:app
