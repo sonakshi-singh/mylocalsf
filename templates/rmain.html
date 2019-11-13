@@ -37,13 +37,13 @@ header{
 	color: white;
 	 overflow:hidden;
  min-height: 30%;
- padding:30px;
- width: 100%;
+ width:100%;
+
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
   position: relative;
 }
 
@@ -51,53 +51,93 @@ header{
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  text-align: right;
+
 }
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
-  padding: 14px 16px;
+  color: black;
+  
   text-decoration: none;
   font-size: 16px;
   display: block;
 }
 
-/* Style the hamburger menu */
+/* Style the user account menu */
 .topnav a.icon {
-  background: black;
+  float: right;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #4e2a84;
+  
   color: black;
 }
 
+ion-icon {
+  
+  float: right;
+}
+
+.dropbtn
+{
+	text-align: right;
+}
+
+
 
 </style>
+<script type="text/javascript">
+	
+
+	function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 
 </head>
 <body>
-<header>
 <div class="container-fluid">
-<div class="topnav">
- <a href="#home" class="active">icon</a>
+<header>
 
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="#stats">about</a>
-    <a href="#">stats</a>
-    
-  </div>
+<div class="topnav">
+ <a href="#home" class="active"></a>
+
   <!-- / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+  <a href="javascript:void(0);" class="dropbtn" onclick="myFunction()">
+   <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
   </a>
+  <div class="dropdown">
+<div class="dropdown-content">
+  <!-- Navigation links (hidden by default) -->
+  
+  <div id="myLinks">
+    <a href="#about">ABOUT</a>
+    <a href="#stats">STATS</a>
+ 
+  </div>
+  </div>
+  </div>
+</div>
+</header>
+
+
+
+
+</div>
+ 
 </div>
 </div>
 
