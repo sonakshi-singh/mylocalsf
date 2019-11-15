@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>main</title>
+  <title>main</title>
 
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   
 <style type="text/css">
-	
+  
 .container-fluid{
   width: 100%;
   margin:auto;
  
   padding: 0;
   position: relative;
-
 }
-
-
 header{
-	color: white;
-	 overflow:hidden;
+  color: white;
+   overflow:hidden;
  min-height: 30%;
  width:100%;
 
 }
 
+textarea{
+
+  min-height: 30%;
+  width: 100%;
+  text-align: center;
+
+font-size: 30px;
+}
 .topnav {
   overflow: hidden;
-  background-color: white;
-  position: relative;
+  background-color: grey;
+  position: relative; 
+   border-bottom: solid black;
 }
-
-
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
   text-align: right;
-
 }
-
 /* Style navigation menu links */
 .topnav a {
   color: black;
@@ -63,7 +62,6 @@ header{
   font-size: 16px;
   display: block;
 }
-
 /* Style the user account menu */
 .topnav a.icon {
   float: right;
@@ -71,32 +69,52 @@ header{
   position: absolute;
   right: 0;
   top: 0;
-
 }
-
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   
   color: black;
 }
-
 ion-icon {
   
   float: right;
 }
-
 .dropbtn
 {
-	text-align: right;
+  text-align: right;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: left;
+  min-height: 10%;
 }
 
+.footer li
+{ list-style-type: none;
+  display: inline-block;
+  padding-right: 30%;
+  padding-top: 10px;
+  
 
+
+  
+}
+.footer ul{padding-left: 20%;}
+
+/* have to add media screen for footer li*/
 
 </style>
-<script type="text/javascript">
-	
 
-	function myFunction() {
+
+
+<script type="text/javascript">
+  
+  function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -133,15 +151,19 @@ ion-icon {
 </div>
 </header>
 
-
+  <textarea name="ask" placeholder="What's your question?"></textarea>
 
 
 </div>
  
+
+<div class="footer">
+  <ul>
+
+ <li><i class="fa fa-home fa-2x" id="house" aria-hidden="true"><a href=""> </a> </i></li>
+ <li><i class="fa fa-pencil-square-o fa-2x" id="pencil" aria-hidden="true"><a href=""></a></i></li>
+ <li><i class="fa fa-bell fa-2x" id="bell" aria-hidden="true"> <a href=""> </a> </i></li>
 </div>
-</div>
-
-</header>
 
 
 
@@ -149,7 +171,6 @@ ion-icon {
 
 
 
-</header>
 
 
 
