@@ -146,44 +146,104 @@ button {
               <h1 class="homegrown">MyLocal</h1>
               <p class="real-local-news">Real Local News</p>
             </div>
-              <div class="header-fix">
-                <div class="container mt-3">
+            <div class="header-fix">
+              <div class="container mt-3">
                 <!-- Button to Open the Modal -->
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
                   I'm a Reader seeking the news
                 </button>
-
-                <!-- The Modal -->
-                <div class="modal fade" id="myModal">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                    
-                      <!-- Modal Header -->
-                      <div class="modal-header">
-                        <h4 class="modal-title">Modal Heading</h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                      </div>
-                      
-                      <!-- Modal body -->
-                      <div class="modal-body">
-                        Modal body..
-                      </div>
-                      
-                      <!-- Modal footer -->
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    
-                    </div>
-                  </div>
-                </div>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal-2">
+                  I'm a Reporter seeking stories
+                </button>
               </div>
-             <button type="button" class="btn btn-info btn-lg">I'm a Reader seeking the news</button>
-             <button type="button" class="btn btn-info btn-lg">I'm a Reporter seeking a story</button>
             </div>  
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- The Modal: Reader -->
+   <div class="modal fade" id="myModal">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+                      
+    <!-- Modal Header -->
+        <div class="modal-header">
+           <h4 class="modal-title">Join your community</h4>
+           <button type="button" class="close" data-dismiss="modal">×</button>
+         </div>
+                        
+    <!-- Modal body -->
+        <div class="modal-body">
+         <div class="container">
+		  <h2>Stacked form</h2>
+			  <form action="/action_page.php">
+			    <div class="form-group">
+			      <label for="email">Email:</label>
+			      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+			    </div>
+			    <div class="form-group">
+			      <label for="pwd">Password:</label>
+			      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+			    </div>
+			    <div class="form-group form-check">
+			      <label class="form-check-label">
+			        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+			      </label>
+			    </div>
+			    <button type="submit" class="btn btn-primary">Submit</button>
+			  </form>
+			</div>
+        </div>
+                        
+    <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>          
+      </div>
+    </div>
+  </div>
+  <!-- The Modal: Writer -->
+   <div class="modal fade" id="myModal-2">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+                      
+    <!-- Modal Header -->
+        <div class="modal-header">
+           <h4 class="modal-title">Become a reporter</h4>
+           <button type="button" class="close" data-dismiss="modal">×</button>
+         </div>
+                        
+    <!-- Modal body -->
+        <div class="modal-body">
+        	<div class="container">
+			  <h2>Stacked form</h2>
+			  <form action="/action_page.php">
+			    <div class="form-group">
+			      <label for="email">Email:</label>
+			      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+			    </div>
+			    <div class="form-group">
+			      <label for="pwd">Password:</label>
+			      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+			    </div>
+			    <div class="form-group form-check">
+			      <label class="form-check-label">
+			        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+			      </label>
+			    </div>
+			    <button type="submit" class="btn btn-primary">Submit</button>
+			  </form>
+			</div>
+        </div>
+                        
+    <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>          
+      </div>
+    </div>
+  </div>
 </header>
 </body>
 </html>
