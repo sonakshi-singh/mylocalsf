@@ -7,17 +7,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   
-  
   <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Adamina|EB+Garamond|News+Cycle&display=swap" rel="stylesheet">
 
+
    
 <style type="text/css">
+
+
 
 .item1 { grid-area: header; }
 .item2 { grid-area: menu; }
@@ -65,7 +68,7 @@
 
 header {
   position: relative;
-  background-color: black;
+  background-color: #0093bc;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
@@ -125,9 +128,14 @@ button {
 
 .real-local-news {
   font-family: 'News Cycle', sans-serif;
+  color: #a31621;
 }
 
+.btn-info {
+	background-color: #233d4d;
+	border-color: #233d4d;
 }
+
 
 </style>
 <body>
@@ -143,17 +151,17 @@ button {
         <div class="grid-container">
           <div class="item3">
             <div class="header">
-              <h1 class="homegrown">MyLocal</h1>
+              <h1 class="homegrown">Homegrown</h1>
               <p class="real-local-news">Real Local News</p>
             </div>
             <div class="header-fix">
               <div class="container mt-3">
                 <!-- Button to Open the Modal -->
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-                  I'm a Reader seeking the news
+                  I'm a Reader
                 </button>
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal-2">
-                  I'm a Reporter seeking stories
+                  I'm a Reporter
                 </button>
               </div>
             </div>  
@@ -169,14 +177,14 @@ button {
                       
     <!-- Modal Header -->
         <div class="modal-header">
-           <h4 class="modal-title">Join your community</h4>
+           <h4 class="modal-title">I'm a Reader seeking the news</h4>
            <button type="button" class="close" data-dismiss="modal">×</button>
          </div>
                         
     <!-- Modal body -->
         <div class="modal-body">
          <div class="container">
-		  <h2>Stacked form</h2>
+		  <h2></h2>
 			  <form action="/action_page.php">
 			    <div class="form-group">
 			      <label for="email">Email:</label>
@@ -186,20 +194,24 @@ button {
 			      <label for="pwd">Password:</label>
 			      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
 			    </div>
-			    <div class="form-group form-check">
-			      <label class="form-check-label">
-			        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-			      </label>
+			     <div>
+			      <form action="/action_page.php">
+				    <div class="form-check">
+				      <label class="form-check-label" for="radio1">
+				        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Sign in
+				      </label>
+				    </div>
+				    <div class="form-check">
+				      <label class="form-check-label" for="radio2">
+				        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Sign up
+				      </label>
+				    </div>
+				  </form>
 			    </div>
 			    <button type="submit" class="btn btn-primary">Submit</button>
 			  </form>
 			</div>
-        </div>
-                        
-    <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>          
+        </div>     
       </div>
     </div>
   </div>
@@ -210,14 +222,14 @@ button {
                       
     <!-- Modal Header -->
         <div class="modal-header">
-           <h4 class="modal-title">Become a reporter</h4>
+           <h4 class="modal-title">I'm a Reporter seeking stories</h4>
            <button type="button" class="close" data-dismiss="modal">×</button>
          </div>
                         
     <!-- Modal body -->
         <div class="modal-body">
         	<div class="container">
-			  <h2>Stacked form</h2>
+			  <h2></h2>
 			  <form action="/action_page.php">
 			    <div class="form-group">
 			      <label for="email">Email:</label>
@@ -227,19 +239,23 @@ button {
 			      <label for="pwd">Password:</label>
 			      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
 			    </div>
-			    <div class="form-group form-check">
-			      <label class="form-check-label">
-			        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-			      </label>
+			    <div>
+			      <form action="/action_page.php">
+				    <div class="form-check">
+				      <label class="form-check-label" for="radio1">
+				        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Sign in
+				      </label>
+				    </div>
+				    <div class="form-check">
+				      <label class="form-check-label" for="radio2">
+				        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Sign up
+				      </label>
+				    </div>
+				  </form>
 			    </div>
 			    <button type="submit" class="btn btn-primary">Submit</button>
 			  </form>
 			</div>
-        </div>
-                        
-    <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>          
       </div>
     </div>
