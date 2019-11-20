@@ -23,29 +23,33 @@
 .container-fluid{
   width: 100%;
   margin:auto;
- 
+ overflow: hidden;
   padding: 0;
   position: relative;
 }
 header{
-  color: white;
+  color: #0093BC;
    overflow:hidden;
- min-height: 30%;
+ min-height: 50%;
  width:100%;
+
 
 }
 
 textarea{
-
-  min-height: 30%;
-  width: 100%;
+  
+  height: 20%;
+  width: 40%;
+  padding: 10px;
+  margin-left: 30%;
   text-align: center;
-
 font-size: 30px;
+overflow: scroll;
+
 }
 .topnav {
   overflow: hidden;
-  background-color: grey;
+  background-color: #0093BC;
   position: relative; 
    border-bottom: solid black;
 }
@@ -88,10 +92,11 @@ ion-icon {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: grey;
+  background-color: #0093BC;
   color: white;
   text-align: left;
   min-height: 10%;
+
 }
 
 .footer li
@@ -106,8 +111,21 @@ ion-icon {
 }
 .footer ul{padding-left: 20%;}
 
-/* have to add media screen for footer li*/
+/* have to add media screen for footer li and question*/
 
+
+div #question
+{   
+   
+    width: 40%;
+  padding: 10px;
+  border: 5px solid #0093BC;
+  margin-left: 30%;
+overflow: scroll;
+  text-align: center;
+
+
+}
 </style>
 
 
@@ -153,9 +171,23 @@ ion-icon {
 
   <textarea name="ask" placeholder="What's your question?"></textarea>
 
+ <div id="question">
+  <h2> Question</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis. </p>
+  </div>
+
+  <div id= "question">
+  <h2>Question</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices ligula velit. Maecenas cursus enim in purus vestibulum condimentum. Sed quis vehicula sem. Nam sit amet dui arcu. Cras sapien nunc, commodo in tincidunt eu, pretium sit amet libero. Duis scelerisque justo at felis sagittis fringilla. Proin pulvinar est felis, eget elementum mauris dignissim non. Sed rutrum nisl sed augue porta, sit amet euismod tellus mollis.</p>
+    
+
+  </div>
+
+ </div>
 
 </div>
  
+
 
 <div class="footer">
   <ul>
