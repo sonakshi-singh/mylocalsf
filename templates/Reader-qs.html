@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>myLocal</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Arvo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Adamina|EB+Garamond|News+Cycle&display=swap" rel="stylesheet">
+
+
+   
+<style type="text/css">
+
+
+
+#item1 { grid-area: header; 
+  border-style: solid;
+
+}
+#item2 { grid-area: menu; 
+  border-style: solid;
+
+}
+#item3 { grid-area: main; 
+  border-style: solid;
+
+}
+#item4 { grid-area: right;
+  border-style: solid;
+
+ }
+#item5 { grid-area: footer; 
+  border-style: solid;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu footer footer footer footer right';
+  grid-gap: 5px;
+  padding: 5px;
+
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+button {
+  margin-top: 5px;
+}
+
+.homegrown {
+  font-family: 'Adamina', serif;
+  
+  font-size: 75px;
+}
+
+.real-local-news {
+  font-family: 'News Cycle', sans-serif;
+  color: #f3b61f;
+}
+
+.btn-info {
+	background-color: #233d4d;
+	border-color: #233d4d;
+}
+body {
+  background-color:  #0093bc;
+}
+
+#box {
+  border-radius: 10px 10px; 
+  background-color: white;
+  color: black;
+  margin-top: 5px;
+
+}
+
+#answered {
+  color: green;
+}
+
+#in-progress {
+  color: yellow;
+}
+
+#unassigned {
+  color: red;
+}
+</style>
+<body>
+
+<header>
+  <div class="container h-100">
+    <div>
+      <div class="w-100 text-white">
+        <div class="grid-container">
+          <div id="item3">
+
+            <div>
+              <h1 class="homegrown">Your Questions</h1>
+            </div>
+            <div class="container">
+              <form>
+                <div class="form-group">
+                  <label for="comment">Compose a question:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+              </form>
+            </div>
+            <div id="box">
+              <h3>Question #1</h3>
+              <h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8><p id="answered">Answered</p>
+            </div>
+            <div id="box">
+              <h3>Question #2</h3>
+              <h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8><p id="in-progress">In Progress</p>
+            </div>
+            <div id="box">
+              <h3>Question #3</h3>
+              <h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8><p id="unassigned">Unassigned</p>
+            </div>
+          </div>
+          <div id="item1">header</div>
+          <div id="item2">Menu</div>
+          <div id="item4">Right</div>
+          <div id="item5">Right</div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+</header>
+</body>
+</html>
