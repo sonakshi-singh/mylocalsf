@@ -23,24 +23,27 @@
 
 
 #item1 { grid-area: header; 
-  border-style: solid;
+  /*border-style: solid;
+  border-color: black;*/
 
 }
 #item2 { grid-area: menu; 
-  border-style: solid;
+  /*border-style: solid;
+  border-color: black;*/
 
 }
 #item3 { grid-area: main; 
-  border-style: solid;
+  
 
 }
 #item4 { grid-area: right;
-  border-style: solid;
+  /*border-style: solid;
+  border-color: black;*/
 
  }
 #item5 { grid-area: footer; 
-  border-style: solid;
-
+  /*border-style: solid;
+  border-color: black;*/
 }
 
 .grid-container {
@@ -97,15 +100,51 @@ button {
 	border-color: #233d4d;
 }
 body {
-  background-color:  #0093bc;
+  background-color:  white;
 }
 
-#box {
-  border-radius: 10px 10px; 
+
+#box1 {
+  text-align: center;
   background-color: white;
   color: black;
-  margin-top: 5px;
+  margin-top: 10px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+ 
+}
 
+#box3 {
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+#box2 {
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 }
 
 #answered {
@@ -114,13 +153,35 @@ body {
 }
 
 #in-progress {
-  color: yellow;
-  text-align: center;
+  color: orange;
+  text-align: center; 
 }
 
 #unassigned {
   color: red;
   text-align: center;
+}
+
+#compose {
+  
+  background-color: white;
+  color: black;
+  margin-top: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  border-color: #0093bc;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px 5px; 
+}
+
+h6 {
+	color: grey;
+}
+
+h6:hover {
+	color: blue;
 }
 </style>
 
@@ -131,39 +192,64 @@ body {
 </header>
 <div class="container h-100">
     <div>
-      <div class="w-100 text-white">
+      <div class="w-100">
         <div class="grid-container">
           <div id="item3">
-
             <div>
-              <h1 class="homegrown">Your Questions</h1>
-            </div>
-            <div class="container">
-              <form>
-                <div class="form-group">
-                  <label for="comment">Compose a question:</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
+				<div id="compose">
+				  <div>	
+				  <p><img src="user.png" style="width:20px;height:20px;"> Andrew Weiler</p>
+				  </div>
+                  <button type="button" class="btn btn-outline-none text-dark"  data-toggle="modal" data-target="#myModal"><h6>What is your question?<h6>
+                  </button>
                 </div>
-              </form>
             </div>
-            <div id="box">
-              <h3>Question #1</h3>
-              <h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8><p id="answered">Answered</p>
+            <div id="box1">
+              <a href="google.com"><h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8></a>
+              <p id="answered">Answered</p>
+             
             </div>
-            <div id="box">
-              <h3>Question #2</h3>
-              <h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8><p id="in-progress">In Progress</p>
+
+            <div id="box2">
+              <a href="google.com"><h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8></a>
+              <div id="in-progress">
+              	<p>In Progress</p>
+              </div>
             </div>
-            <div id="box">
-              <h3>Question #3</h3>
-              <h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8><p id="unassigned">Unassigned</p>
+            <div id="box3">
+              <a href="google.com"><h8>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</h8></a>
+              <p id="unassigned">Unassigned</p>
             </div>
           </div>
-          <div id="item1">header</div>
-          <div id="item2">Menu</div>
-          <div id="item4">Right</div>
-          <div id="item5">Footer</div>
+          <div id="item1"></div>
+          <div id="item2"></div>
+          <div id="item4"></div>
+          <div id="item5"></div>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
       </div>
     </div>
   </div>

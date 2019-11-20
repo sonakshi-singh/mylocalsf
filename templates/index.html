@@ -58,11 +58,20 @@
   .right {
     width: 100%;
   }
+
+.homegrown { 
+  font-size: 70px;
+ }
+
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .right {
     width: 100%;
+  }
+
+  .homegrown {
+    font-size: 60px;
   }
 }
 
@@ -112,14 +121,7 @@ header .overlay {
   z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-}
+
 
 button {
   margin-top: 5px;
@@ -127,10 +129,11 @@ button {
 
 .homegrown {
   font-family: 'Adamina', serif;
-  
-  font-size: 75px;
 }
 
+h1 {
+  font-size: 80px;
+}
 .real-local-news {
   font-family: 'News Cycle', sans-serif;
   color: #f3b61f;
