@@ -22,9 +22,7 @@ def create_app(config_file='settings.py'):
 def home():
     return render_template("index.html")
 
-@app.route("/")
-def rmain():
-    return render_template("rmain.html")
+
     
 
     
