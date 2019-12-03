@@ -8,9 +8,7 @@ app=Flask(__name__)
 @app.route("/")
 def home():
     return render_template("index.html")
-@app.route('/rmain')
-def rmain():
-    return render_template("rmain.html")
+
 
     
 if __name__ == "__main__":
