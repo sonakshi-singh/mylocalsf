@@ -8,7 +8,7 @@ app=Flask(__name__)
 def home():
     return render_template("index.html")
 
-@main.route("/rmain")
+@app.route("mylocalsf.herokuapp.com/templates/rmain.html")
 def rmain():
     return render_template("rmain.html")
 
